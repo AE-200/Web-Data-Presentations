@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Lattitude</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <!-- Creates the Overall Grid -->
+
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <a class="navbar-brand" href="web_hw-index.html"> <span>Lattitude </span> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar ml-auto">
+                 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots  
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="web_hw-Windspeed.html">Lattitude vs Wind Speed</a>
+              <a class="dropdown-item" href="web_hw-Humidity.html">Lattitude vs Humidity</a>
+              <a class="dropdown-item" href="web_hw-Cloudiness.html">Lattitude vs Cloudiness</a>
+              <a class="dropdown-item" href="web_hw-MaxTemperature.html">Lattitude vs Max Temperature</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-data" href="web_hw-Data.html">&nbsp; &nbsp; Data &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-comparison" href="web_hw-comparison.html">Comparison &emsp14;</a>
+           </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="container">
+
+      <!-- Row 2 -->
+      <div class="row" >
+        <div class="col-md-7 col-sm-12">
+          <h2>Wind Speed</h2>
+
+          <p ><br>
+            <img style="padding: 0 15px; float: none;" src="City Lattitude vs Wind Speed.png">
+
+            <br> Based on the sample of cities selected, wind speed does not seem to vary much with lattitude.  The chart shows that 
+          varying windpseeds can be found across all lattitudes.  One possible reason for this could definitely be the time of year
+        when some sesaonal winds would not be captured in the wind speed measurements. </p>
+        </div>
+        <div class="col-md-5 col-12 col-sm-12">
+          <h2>&nbsp; &nbsp; &nbsp; &nbsp; Visualizations</h2>
+          <div class="gallery">
+            <figure class="”gallery__item gallery__item--1">
+              <a href="web_hw-MaxTemperature.html">
+                <img src="City Lattitude vs Max Temperature.png", class="gallery__img"></a>
+            </figure>
+            <figure class="”gallery__item gallery__item--2">
+              <a href="web_hw-Cloudiness.html">
+                <img src="City Lattitude vs Cloudiness.png", class="gallery__img"></a>
+            </figure>
+            <figure class="”gallery__item gallery__item--3">
+              <a href="web_hw-Humidity.html">
+                <img src="City Lattitude vs Humidity.png", class="gallery__img"></a>
+            </figure>
+            <figure class="”gallery__item gallery__item--4">
+              <a href="web_hw-Windspeed.html">
+                <img src="City Lattitude vs Wind Speed.png", class="gallery__img"></a>
+            </figure>
+          </div>
+          
+                  
+              
+              
+        </div>
+        
+      </div>
+  </body>
+
+</html>
