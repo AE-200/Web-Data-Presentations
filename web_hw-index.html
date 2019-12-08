@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FROM DART: You need to add your own css sheet here -->
+    <link rel="stylesheet" href="style.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <!-- Creates the Overall Grid -->
+
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <a class="navbar-brand" href="web_hw-index.html">
+        <!-- FROM DART: You need to place your Latitude
+        button a class so that you can format it -->
+        <span class="navbar-button">Latitude</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar ml-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="web_hw-Windspeed.html">Latitude vs Wind Speed</a>
+              <a class="dropdown-item" href="web_hw-Humidity.html">Latitude vs Humidity</a>
+              <a class="dropdown-item" href="web_hw-Cloudiness.html">Latitude vs Cloudiness</a>
+              <a class="dropdown-item" href="web_hw-MaxTemperature.html">Latitude vs Max Temperature</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-data" href="web_hw-Data.html">&nbsp; &nbsp; Data &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-comparison" href="web_hw-comparison.html">Comparison &emsp14;</a>
+           </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!--
+      FROM DART: Use a <p> tag or margins to create space between
+                your navbar and the rest of the cells
+    -->
+
+    <p></p>
+    <p></p>
+    
+    <div class="container">
+
+      <!-- Row 2 -->
+      <div class="row" >
+        <div class="col-md-7 col-sm-12">
+          <!-- FROM DART: Assign this div to a class
+                          so that you can format it later
+                          in the css. In this case, I called
+                          the class `box-content`-->
+          <div class="box-content">
+            <h2>Summary: Latitude vs X</h2>
+
+            <p ><br>
+              <img style="padding: 0 15px; float: left;" src="City Lattitude vs Max Temperature.png">
+
+              The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+              accomplish this, we first pulled data from the
+              Open Weather Map API to assemble a dataset on over 500 cities <br><br> After assembling the dataset, we
+              used Matplotlib to plot various aspects of the
+              the weather vs lattitude. Factors we looked at include cloudiness, temperature, humidity and wind speed.
+              This site provides the source data and visualizations
+              created as a part of the analysis, as well as descriptions of any trends and correlations witnessed. </p>                                            </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-12 col-sm-12">
+          <!-- FROM DART: Assign this div to a class
+                          so that you can format it later
+                          in the css. In this case, I called
+                          the class `box-content`-->
+          <div class="box-content-2">
+            <h2>&nbsp; &nbsp; &nbsp; &nbsp; Visualizations</h2>
+            <div class="gallery">
+              <figure class="”gallery__item gallery__item--1">
+                <a href="web_hw-MaxTemperature.html">
+                  <img src="City Lattitude vs Max Temperature.png", class="gallery__img"></a>
+              </figure>
+              <figure class="”gallery__item gallery__item--2">
+                <a href="web_hw-Cloudiness.html">
+                  <img src="City Lattitude vs Cloudiness.png", class="gallery__img"></a>
+              </figure>
+              <figure class="”gallery__item gallery__item--3">
+                <a href="web_hw-Humidity.html">
+                  <img src="City Lattitude vs Humidity.png", class="gallery__img"></a>
+              </figure>
+              <figure class="”gallery__item gallery__item--4">
+                <a href="web_hw-Windspeed.html">
+                  <img src="City Lattitude vs Wind Speed.png", class="gallery__img"></a>
+              </figure>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+  </body>
+
+</html>
